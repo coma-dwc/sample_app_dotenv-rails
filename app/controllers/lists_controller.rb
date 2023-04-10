@@ -18,6 +18,7 @@ class ListsController < ApplicationController
 
 
   def index
+    puts "作成したキー #{ENV['SECRET_KEY']}"
     @lists = List.all #複数のListレコードが取得できるので複数形のlistsにした
   end
 
